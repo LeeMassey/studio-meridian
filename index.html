@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Studio Meridian · Boutique Recording Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Studio Meridian is a boutique recording studio for artists, bands and podcasts. Clean, modern rooms and a relaxed, professional environment." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">
+                    sm
+                </span>
+                Studio Meridian
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link nav-link--active">Home</a>
+                <a href="about.html" class="nav-link">Studio</a>
+                <a href="services.html" class="nav-link">Rates &amp; Booking</a>
+                <a href="services.html#contact" class="nav-cta">
+                    Book a session <span>→</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-inner">
+                    <div>
+                        <div class="kicker">
+                            <span class="kicker-dot"></span>
+                            Artist-first recording studio
+                        </div>
+
+                        <h1 class="hero-title">
+                            Record, mix &amp; create<span> with confidence.</span>
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            Studio Meridian is a modern, comfortable recording studio built for artists, bands and
+                            creators who want clean, powerful sound without the stress of a big commercial facility.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="services.html#contact" class="btn-primary">
+                                Request availability
+                                <span>→</span>
+                            </a>
+                            <a href="about.html" class="btn-ghost">
+                                View the studio
+                            </a>
+                        </div>
+
+                        <div class="hero-meta">
+                            <div class="hero-meta-item">
+                                <span class="hero-meta-label">Sessions</span>
+                                <span class="hero-meta-value">Half-day &amp; full-day</span>
+                            </div>
+                            <div class="hero-meta-item">
+                                <span class="hero-meta-label">Projects</span>
+                                <span class="hero-meta-value">
+                                    Singles, EPs, albums &amp; podcasts
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="hero-visual-card" aria-hidden="true">
+                        <div class="hero-badge">
+                            <span class="hero-badge-dot"></span>
+                            Control room + live room with isolation
+                        </div>
+
+                        <div>
+                            <img class="studio-photo" src="img/studio-liveroom.jpg"
+                                alt="Control room at Studio Meridian" />
+
+                        </div>
+                        <div class="hero-stat">
+                            <span>✔</span>
+                            <span>Hybrid analog/digital workflow · Comfortable, quiet rooms</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services overview -->
+        <section class="section">
+            <div class="container">
+                <header class="section-header section-header--center">
+                    <h2 class="section-title">What We Offer</h2>
+                    <p>From first take to final master.</p>
+                </header>
+
+                <div class="grid-3">
+                    <article class="card">
+                        <div class="card-icon">🎙️</div>
+                        <h3 class="card-title">Recording sessions</h3>
+                        <p class="card-text">
+                            Capture vocals, bands, overdubs and voice work in a treated live room with accurate
+                            monitoring and a relaxed, creative atmosphere.
+                        </p>
+                        <p class="card-meta">Half-day and full-day bookings.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">🎧</div>
+                        <h3 class="card-title">Mixing &amp; editing</h3>
+                        <p class="card-text">
+                            Clear, balanced mixes with tasteful processing, vocal tuning, cleanup and revisions so your
+                            project sounds polished and professional.
+                        </p>
+                        <p class="card-meta">Remote mix projects welcome.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">📻</div>
+                        <h3 class="card-title">Podcasts &amp; content</h3>
+                        <p class="card-text">
+                            RReliable, broadcast-quality voiceover and podcast recording with consistent tone, clarity
+                            and delivery.
+                        </p>
+                        <p class="card-meta">Perfect for creators &amp; small teams.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Studio Meridian. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="about.html">Studio</a>
+                <a href="services.html">Rates &amp; Booking</a>
+                <a href="services.html#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

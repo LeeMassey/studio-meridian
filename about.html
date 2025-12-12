@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>The Studio · Studio Meridian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Take a closer look at Studio Meridian: a modern, comfortable recording studio with a hybrid analog/digital workflow." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">
+                    sm
+                </span>
+                Studio Meridian
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link nav-link--active">Studio</a>
+                <a href="services.html" class="nav-link">Rates &amp; Booking</a>
+                <a href="services.html#contact" class="nav-cta">
+                    Book a session <span>→</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <header class="section-header">
+                    <div>
+                        <div class="section-kicker">The studio</div>
+
+                        <h1 class="section-title">A relaxed space built for great takes.</h1>
+
+                        <p class="section-subtitle studio-subtext">
+                            Clean, minimal rooms, natural light and a straightforward layout
+                            so you can focus on performance instead of fighting the gear.
+                        </p>
+                    </div>
+                </header>
+
+                <div class="split">
+                    <div>
+                        <p style="margin-bottom: 1rem; font-size: 0.96rem;">
+                            Our studio is a compact, carefully treated space with a dedicated control room and live
+                            room. Big enough for bands, tight enough for focused vocal work, and designed so you can get
+                            straight to recording without complicated setup.
+                        </p>
+
+                        <p style="margin-bottom: 1rem; font-size: 0.96rem;">
+                            We run a hybrid digital/analog workflow: clean mic pres into a modern DAW, with optional
+                            outboard gear for added character and feel. Monitoring is accurate and comfortable so you
+                            can trust what you’re hearing.
+                        </p>
+
+                        <p style="font-size: 0.96rem;">
+                            Every session includes organized file management and backups, making pickup sessions and
+                            revisions easy, whether you're working with us or another engineer later.
+                        </p>
+
+                        <div class="badge-stack">
+                            <span class="badge">Treated control room</span>
+                            <span class="badge">Live room with isolation</span>
+                            <span class="badge">Studio-grade monitoring</span>
+                            <span class="badge">Comfortable lounge area</span>
+                        </div>
+                    </div>
+
+                    <aside class="photo-card">
+                        <div class="photo-frame">
+                            <img class="studio-photo" src="img/studio-control-room.jpg"
+                                alt="Control room at Northstar Recording" />
+                        </div>
+                        <div class="photo-frame">
+                            <img class="studio-photo" src="img/vocal-booth.jpg" alt="Vocal booth in studio" />
+                        </div>
+
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <header class="section-header section-header--center">
+                    <div class="section-kicker">How sessions work</div>
+                    <h2 class="section-title">A clear, simple process.</h2>
+                    <p class="section-subtitle">
+                        We’ll walk you through every step—from pre-production to final files—
+                        so you always know what’s happening next.
+                    </p>
+                </header>
+
+
+                <div class="grid-3">
+                    <article class="card">
+                        <div class="card-icon">📝</div>
+                        <h3 class="card-title">1. Pre-session call</h3>
+                        <p class="card-text">
+                            We talk through your songs, references, instrumentation and
+                            timelines so we can plan the session properly.
+                        </p>
+                        <p class="card-meta">Usually 20–30 minutes via phone or video.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">🎛️</div>
+                        <h3 class="card-title">2. Tracking &amp; overdubs</h3>
+                        <p class="card-text">
+                            We record core parts first, then layer overdubs, harmonies and
+                            any extra textures you want.
+                        </p>
+                        <p class="card-meta">Focused on performance &amp; feel.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">📦</div>
+                        <h3 class="card-title">3. Mix &amp; delivery</h3>
+                        <p class="card-text">
+                            After editing and mixing, you receive high-quality files ready
+                            for streaming, video or distribution.
+                        </p>
+                        <p class="card-meta">Stems available on request.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Studio Meridian. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="about.html">Studio</a>
+                <a href="services.html">Rates &amp; Booking</a>
+                <a href="services.html#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
